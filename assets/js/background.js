@@ -1,6 +1,11 @@
 chrome.runtime.onMessage.addListener((message, sender)=> {
-	if(!message.manageMischief) return;
-	else{chrome.tabs.executeScript({
-		file: 'assets/js/inject.js'
-	}); }
+  //console.log('background');
+  //if()
+  //chrome.tabs.executeScript({
+    //file: 'assets/js/inject.js'
+  //});
+  if(!message.manageMischief) return;
+  else{chrome.tabs.executeScript({
+    file: 'assets/js/inject.js'
+  }); }
 });
