@@ -5,6 +5,19 @@ eventFire = async(MyElement, ElementType)=>{
     MyElement.dispatchEvent(MyEvent); 
 }
 inject = async()=>{ 
+    let box= document.querySelectorAll("[dir='auto']"); 
+  //box.map((div) => console.log(div.innerHTML));
+  
+    console.log(box.length);
+  for(let i =0; i < box.length; i ++){
+    if(box[i].innerHTML.includes('Nazi')){
+      console.log('found punday');
+let value = box[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
+      console.log(box[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode);
+      console.log(box[i]);
+box[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.remove();
+    }
+  }
     let messageBox = document.querySelectorAll("[contenteditable='true']")[1]; 
     let resolveCount = new Promise(function(resolve, reject){
         chrome.storage.sync.get({"count": true}, function(options){ resolve(options.count); })

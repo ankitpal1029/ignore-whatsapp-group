@@ -1,3 +1,4 @@
+console = chrome.extension.getBackgroundPage().console;
 chrome.storage.sync.clear();
 let button = document.getElementById("injectMessage");
 let validation = document.getElementById("validation");
