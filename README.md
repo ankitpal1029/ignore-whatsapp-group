@@ -13,7 +13,7 @@ A simple Chrome extension to ignore groups temporarily that you don't want to qu
 
 #### For FireFox
 - Switch to firefox branch of this repo
-- Open FireFox => type `about:debugging` => Click Load Unpacked => open the repo and select the manifest.json
+- Open FireFox => type `about:debugging` => Click `This Firefox` => Click `Load Temporary Add on..` => open the repo and select the manifest.json
 ### How-To-Use
 - Open Whatsapp web.
 - Select a contact or a group that you'd like to yeet from your screen.
